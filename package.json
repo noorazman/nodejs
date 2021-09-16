@@ -1,9 +1,12 @@
 {
-  "name": "shareclip",
-  "version": "1.1.0",
+  "name": "shareclipext",
+  "version": "1.0.0",
   "main": "app.js",
-  "repository": "https://github.com/khrj/shareclip",
-  "author": "Khushraj Rathod <khushraj.rathod@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noorazman/shareclipext.git"
+  },
+  "author": "Noorazman Kamaruddin <noorazman.kamaruddin@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
     "clipboardy": "^2.3.0",
@@ -13,6 +16,15 @@
     "socket.io-client": "^2.3.1"
   },
   "bin": {
-    "shareclip": "./app.js"
-  }
+    "shareclipext": "app.js"
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/noorazman/shareclipext/issues"
+  },
+  "homepage": "https://github.com/noorazman/shareclipext#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
 }
