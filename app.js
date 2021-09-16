@@ -16,7 +16,8 @@ const listenServer = _ => {
     const app = require("express")()
     const server = require("http").createServer(app)
     const io = require("socket.io")(server)
-    
+    process.env.PORT = process.argv[3]
+
     server.listen(process.env.PORT || 0, _ => {
         let port = process.env.PORT || server.address().port
         console.log(`Listening on port ${port}`)
@@ -64,7 +65,7 @@ const connectClient = _ => {
 }
 
 try {
-    if (process.argv.length === 2) { // Server
+    if (process.argv.length === 4) { // Server
         listenServer()
     } else if (process.argv.length === 3) { // Client
         connectClient()
